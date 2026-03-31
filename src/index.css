@@ -1,0 +1,131 @@
+/* Purani saari CSS delete karein aur ye paste karein */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Layout restrict karne ke liye */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Jaisa aapne HTML mein chaha */
+  line-height: 1.5;
+  color: #333;
+  padding: 20px; /* Thori side padding taake full edge na ho */
+  background-color: #f9f9f9; /* Soft background pure body par */
+}
+
+/* 1. Elegant Container (Elegant Logic Yahan Hai) */
+.resume-container {
+  max-width: 800px;
+  margin: 30px auto; /* Centre mein karne ke liye */
+  background: #ffffff; /* Sirf resume white hoga */
+  padding: 30px; /* Inner clean spacing */
+  border-radius: 8px; /* Elegant curves */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Bohat halki shadow elegant look ke liye */
+}
+
+/* 2. Header Section (Elegant Blue Background) */
+.header-table {
+  width: 100%;
+  border-collapse: separate; /* Is se curves smooth aate hain */
+  border-spacing: 0;
+  background-color: #dbeafe; /* Light, elegant blue from screenshot 1 */
+  border-radius: 8px; /* Smooth curves */
+  margin-bottom: 25px;
+  overflow: hidden; /* Taake image andr hi rahe */
+  border: none !important; /* HTML borders khatam karne ke liye */
+}
+
+.header-table td {
+  padding: 20px;
+  vertical-align: middle;
+  border: none !important; /* HTML borders khatam karne ke liye */
+}
+
+/* Image styling (Diciplined & Fixed) */
+.profile-img {
+  width: 180px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin-right: -20px; /* Taake image light blue area se thori bahar elegant lage */
+  border-radius: 8px; /* Image curves */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Elegant elevation */
+}
+
+/* 3. Section Headings (Elegant & Disciplined) */
+h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  color: #2563eb; /* Wahi blue shade */
+  font-weight: 600;
+  border-bottom: 2px solid #2563eb; /* Smooth bottom line */
+  padding-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+/* 4. Content Paragraphs & Lists */
+p, li {
+  font-size: 0.95rem;
+  color: #4b5563; /* Thora light dark grey */
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  margin-left: 25px; /* Disciplined indentation */
+  margin-bottom: 15px;
+}
+
+/* 5. Education Table (Screenshot 1 Jaisa Minimalist) */
+.edu-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: #eff6ff; /* Halki blue background */
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: none !important;
+}
+
+.edu-table td {
+  padding: 15px;
+  border: none !important;
+}
+
+/* Education bold text elegant lagne ke liye */
+.edu-table li strong {
+  font-weight: 700;
+  color: #111;
+}
+
+/* 6. Footer (Elegant & Disciplined) */
+.resume-footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.85rem;
+  color: #999;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 20px;
+  font-style: italic;
+  letter-spacing: 0.7px;
+}
+
+/* 7. Responsive Check */
+@media (max-width: 650px) {
+  .header-table {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profile-img {
+    margin: 15px auto 0;
+    width: 150px;
+    height: 170px;
+  }
+  
+  .resume-container {
+    padding: 15px;
+  }
+}
